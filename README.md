@@ -23,9 +23,9 @@ Doc: https://docs.google.com/document/d/e/2PACX-1vR_jpC1g9arR_SajVFdnWFn5kpAgFiW
 - [x] Validate installation with shotgun
 - [x] Github Init/Commit
 
-2. Setup Project MVC: Listings
+2. Setup Project MVC: Listings The listing manager uses
 
-- [] Listings Controller
-- [] Listing Model
-- [] Listing View
+- [ ] Listings Controller
+- [ ] Listing Model
+- [ ] Listing View
 
