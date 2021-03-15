@@ -1,20 +1,30 @@
+# frozen_string_literal: true
+
 source 'http://rubygems.org'
 
-gem 'sinatra'
-gem 'activerecord', '~> 4.2', '>= 4.2.6', :require => 'active_record'
-gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
+gem 'activerecord', '~> 6.1', require: 'active_record'
+gem 'bcrypt'
+gem 'dotenv'
+gem 'faker'
+gem 'mysql2', '~> 0.5.3'
+gem 'passenger'
+gem 'pry'
+gem 'rack'
 gem 'rake'
 gem 'require_all'
-gem 'sqlite3', '~> 1.3.6'
-gem 'thin'
 gem 'shotgun'
-gem 'pry'
-gem 'bcrypt'
+gem 'sinatra'
+gem 'sinatra-activerecord', '~> 2.0', require: 'sinatra/activerecord'
+gem 'sinatra-advanced-routes'
+gem 'sinatra-flash'
+
+gem 'thin'
 gem 'tux'
 
 group :test do
-  gem 'rspec'
   gem 'capybara'
-  gem 'rack-test'
   gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
+  gem 'rack-test'
+  gem 'rspec'
+  gem 'sqlite3'
 end
