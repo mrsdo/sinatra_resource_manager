@@ -1,4 +1,4 @@
-en-us-fl:
+en-US:
   faker:
     internet:
       domain_suffix: [ com, us, biz, info, name, net, org, io, co ]
@@ -10,7 +10,6 @@ en-us-fl:
         - "#{male_first_name}"
       last_name: [ Abbott, Abernathy, Abshire, Adams, Altenwerth, Anderson, Ankunding, Armstrong, Auer, Aufderhar, Bahringer, Bailey, Balistreri, Barrows, Bartell, Bartoletti, Barton, Bashirian, Batz, Bauch, Baumbach, Bayer, Beahan, Beatty, Bechtelar, Becker, Bednar, Beer, Beier, Berge, Bergnaum, Bergstrom, Bernhard, Bernier, Bins, Blanda, Blick, Block, Bode, Boehm, Bogan, Bogisich, Borer, Bosco, Botsford, Boyer, Boyle, Bradtke, Brakus, Braun, Breitenberg, Brekke, Brown, Bruen, Buckridge, Carroll, Carter, Cartwright, Casper, Cassin, Champlin, Christiansen, Cole, Collier, Collins, Conn, Connelly, Conroy, Considine, Corkery, Cormier, Corwin, Cremin, Crist, Crona, Cronin, Crooks, Cruickshank, Cummerata, Cummings, Dach, D'Amore, Daniel, Dare, Daugherty, Davis, Deckow, Denesik, Dibbert, Dickens, Dicki, Dickinson, Dietrich, Donnelly, Dooley, Douglas, Doyle, DuBuque, Durgan, Ebert, Effertz, Emard, Emmerich, Erdman, Ernser, Fadel, Fahey, Farrell, Fay, Feeney, Feest, Feil, Ferry, Fisher, Flatley, Frami, Franecki, Friesen, Fritsch, Funk, Gerhold, Gerlach, Gibson, Gislason, Gleason, Gleichner, Glover, Goldner, Goodwin, Gorczany, Gottlieb, Goyette, Grady, Graham, Grant, Green, Greenfelder, Greenholt, Grimes, Gulgowski, Gusikowski, Gutkowski, Gutmann, Haag, Hackett, Hagenes, Hahn, Haley, Halvorson, Hamill, Hammes, Hand, Hane, Hansen, Harber, Harris, Hartmann, Harvey, Hauck, Hayes, Heaney, Heathcote, Hegmann, Heidenreich, Heller, Herman, Hermann, Hermiston, Herzog, Hessel, Hettinger, Hickle, Hilll, Hills, Hilpert, Hintz, Hirthe, Hodkiewicz, Hoeger, Homenick, Hoppe, Howe, Howell, Hudson, Huel, Huels, Hyatt, Jacobi, Jacobs, Jacobson, Jakubowski, Jaskolski, Jast, Jenkins, Jerde, Johns, Johnson, Johnston, Jones, Kassulke, Kautzer, Keebler, Keeling, Kemmer, Kerluke, Kertzmann, Kessler, Kiehn, Kihn, Kilback, King, Kirlin, Klein, Kling, Klocko, Koch, Koelpin, Koepp, Kohler, Konopelski, Koss, Kovacek, Kozey, Krajcik, Kreiger, Kris, Kshlerin, Kub, Kuhic, Kuhlman, Kuhn, Kulas, Kunde, Kunze, Kuphal, Kutch, Kuvalis, Labadie, Lakin, Lang, Langosh, Langworth, Larkin, Larson, Leannon, Lebsack, Ledner, Leffler, Legros, Lehner, Lemke, Lesch, Leuschke, Lind, Lindgren, Littel, Little, Lockman, Lowe, Lubowitz, Lueilwitz, Luettgen, Lynch, Macejkovic, MacGyver, Maggio, Mann, Mante, Marks, Marquardt, Marvin, Mayer, Mayert, McClure, McCullough, McDermott, McGlynn, McKenzie, McLaughlin, Medhurst, Mertz, Metz, Miller, Mills, Mitchell, Moen, Mohr, Monahan, Moore, Morar, Morissette, Mosciski, Mraz, Mueller, Muller, Murazik, Murphy, Murray, Nader, Nicolas, Nienow, Nikolaus, Nitzsche, Nolan, Oberbrunner, O'Connell, O'Conner, O'Hara, O'Keefe, O'Kon, Okuneva, Olson, Ondricka, O'Reilly, Orn, Ortiz, Osinski, Pacocha, Padberg, Pagac, Parisian, Parker, Paucek, Pfannerstill, Pfeffer, Pollich, Pouros, Powlowski, Predovic, Price, Prohaska, Prosacco, Purdy, Quigley, Quitzon, Rath, Ratke, Rau, Raynor, Reichel, Reichert, Reilly, Reinger, Rempel, Renner, Reynolds, Rice, Rippin, Ritchie, Robel, Roberts, Rodriguez, Rogahn, Rohan, Rolfson, Romaguera, Roob, Rosenbaum, Rowe, Ruecker, Runolfsdottir, Runolfsson, Runte, Russel, Rutherford, Ryan, Sanford, Satterfield, Sauer, Sawayn, Schaden, Schaefer, Schamberger, Schiller, Schimmel, Schinner, Schmeler, Schmidt, Schmitt, Schneider, Schoen, Schowalter, Schroeder, Schulist, Schultz, Schumm, Schuppe, Schuster, Senger, Shanahan, Shields, Simonis, Sipes, Skiles, Smith, Smitham, Spencer, Spinka, Sporer, Stamm, Stanton, Stark, Stehr, Steuber, Stiedemann, Stokes, Stoltenberg, Stracke, Streich, Stroman, Strosin, Swaniawski, Swift, Terry, Thiel, Thompson, Tillman, Torp, Torphy, Towne, Toy, Trantow, Tremblay, Treutel, Tromp, Turcotte, Turner, Ullrich, Upton, Vandervort, Veum, Volkman, Von, VonRueden, Waelchi, Walker, Walsh, Walter, Ward, Waters, Watsica, Weber, Wehner, Weimann, Weissnat, Welch, West, White, Wiegand, Wilderman, Wilkinson, Will, Williamson, Willms, Windler, Wintheiser, Wisoky, Wisozk, Witting, Wiza, Wolf, Wolff, Wuckert, Wunsch, Wyman, Yost, Yundt, Zboncak, Zemlak, Ziemann, Zieme, Zulauf ]
     address:
-      default_time_zone: [ "US/New York" ]
       building_number: [ '#####', '####', '###' ]
       postcode: [ '#####', '#####-####' ]
       street_suffix: [ Alley, Avenue, Branch, Bridge, Brook, Brooks, Burg, Burgs, Bypass, Camp, Canyon, Cape, Causeway, Center, Centers, Circle, Circles, Cliff, Cliffs, Club, Common, Corner, Corners, Course, Court, Courts, Cove, Coves, Creek, Crescent, Crest, Crossing, Crossroad, Curve, Dale, Dam, Divide, Drive, Drive, Drives, Estate, Estates, Expressway, Extension, Extensions, Fall, Falls, Ferry, Field, Fields, Flat, Flats, Ford, Fords, Forest, Forge, Forges, Fork, Forks, Fort, Freeway, Garden, Gardens, Gateway, Glen, Glens, Green, Greens, Grove, Groves, Harbor, Harbors, Haven, Heights, Highway, Hill, Hills, Hollow, Inlet, Inlet, Island, Island, Islands, Islands, Isle, Isle, Junction, Junctions, Key, Keys, Knoll, Knolls, Lake, Lakes, Land, Landing, Lane, Light, Lights, Loaf, Lock, Locks, Locks, Lodge, Lodge, Loop, Mall, Manor, Manors, Meadow, Meadows, Mews, Mill, Mills, Mission, Mission, Motorway, Mount, Mountain, Mountain, Mountains, Mountains, Neck, Orchard, Oval, Overpass, Park, Parks, Parkway, Parkways, Pass, Passage, Path, Pike, Pine, Pines, Place, Plain, Plains, Plains, Plaza, Plaza, Point, Points, Port, Port, Ports, Ports, Prairie, Prairie, Radial, Ramp, Ranch, Rapid, Rapids, Rest, Ridge, Ridges, River, Road, Road, Roads, Roads, Route, Row, Rue, Run, Shoal, Shoals, Shore, Shores, Skyway, Spring, Springs, Springs, Spur, Spurs, Square, Square, Squares, Squares, Station, Station, Stravenue, Stravenue, Stream, Stream, Street, Street, Streets, Summit, Summit, Terrace, Throughway, Trace, Track, Trafficway, Trail, Trail, Tunnel, Tunnel, Turnpike, Turnpike, Underpass, Union, Unions, Valley, Valleys, Via, Viaduct, View, Views, Village, Village, Villages, Ville, Vista, Vista, Walk, Walks, Wall, Way, Ways, Well, Wells ]
@@ -19,7 +18,7 @@ en-us-fl:
         - "#{Name.last_name} #{street_suffix}"
       street_address:
         - "#{building_number} #{street_name}"
-      state: [ FL ]
+      state_abbr: [ AL, AK, AZ, AR, CA, CO, CT, DE, FL, GA, HI, ID, IL, IN, IA, KS, KY, LA, ME, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VT, VA, WA, WV, WI, WY ]
       city_prefix: [ North, East, West, South, New, Lake, Port ]
       city_suffix: [ town, ton, land, ville, berg, burgh, borough, bury, view, port, mouth, stad, furt, chester, mouth, fort, haven, side, shire ]
       city:
@@ -34,8 +33,59 @@ en-us-fl:
       default_country: [ United States, United States of America, USA ]
       country_code: [ 'US' ]
       postcode_by_state:
+        AL: '350##'
+        AK: '995##'
+        AS: '967##'
+        AZ: '850##'
+        AR: '717##'
+        CA: '900##'
+        CO: '800##'
+        CT: '061##'
+        DC: '204##'
+        DE: '198##'
         FL: '339##'
-        country_code: [ '1' ]
+        GA: '301##'
+        HI: '967##'
+        ID: '832##'
+        IL: '600##'
+        IN: '463##'
+        IA: '510##'
+        KS: '666##'
+        KY: '404##'
+        LA: '701##'
+        ME: '042##'
+        MD: '210##'
+        MA: '026##'
+        MI: '480##'
+        MN: '555##'
+        MS: '387##'
+        MO: '650##'
+        MT: '590##'
+        NE: '688##'
+        NV: '898##'
+        NH: '036##'
+        NJ: '076##'
+        NM: '880##'
+        NY: '122##'
+        NC: '288##'
+        ND: '586##'
+        OH: '444##'
+        OK: '730##'
+        OR: '979##'
+        PA: '186##'
+        RI: '029##'
+        SC: '299##'
+        SD: '577##'
+        TN: '383##'
+        TX: '798##'
+        UT: '847##'
+        VT: '050##'
+        VA: '222##'
+        WA: '990##'
+        WV: '247##'
+        WI: '549##'
+        WY: '831##'
+    country_code: [ '1' ]
     phone_number:
       subscriber_number: [ '####' ]
       extension: [ '####' ]
@@ -77,13 +127,3 @@ en-us-fl:
         - "(#{PhoneNumber.area_code}) #{PhoneNumber.exchange_code}-#{PhoneNumber.subscriber_number}"
         - "#{PhoneNumber.area_code}-#{PhoneNumber.exchange_code}-#{PhoneNumber.subscriber_number}"
         - "#{PhoneNumber.area_code}.#{PhoneNumber.exchange_code}.#{PhoneNumber.subscriber_number}"
-
-    demo_images:
-#      photo_1:
-#        - "#{(1..30).to_s.sample}"
-#      photo_2:
-#        - "#{(2..30).to_s.sample}"
-#      photo_3:
-#        - "#{(3..30).to_s.sample}"
-#      photo_4:
-#        - "#{(4..30).to_s.sample}"

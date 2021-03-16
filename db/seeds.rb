@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require 'faker'
-puts "Running DB seed..."
+puts 'Running DB seed...'
 
 # # Don't let seed duplicate data more than once
-puts "Cleaning database..."
+puts 'Cleaning database...'
 
 # puts "Creating sample Users..."
 # User.create([
@@ -44,22 +46,24 @@ puts "Cleaning database..."
 #                 }
 #             ])
 # puts "Users Completed..."
-puts "......."
-puts "Cleaning Listings Table"
+puts '.......'
+puts 'Cleaning Listings Table'
 Listing.destroy_all
 
-puts "......."
+puts '.......'
 
 puts 'Adding Listings'
 num = 0
 30.times do
   percent = num / 30 * 100
-  sleep(0.05)
-  print "...#{num += 1} seconds remaining\r"
+  # sleep(0.05)
+  print 'Seeding complete in'
+  print "...#{num += 1} seconds\r"
+  i = num += 1
   Listing.create({
-                   'name' => Faker::Address.street_name,
+                   'name' => Faker::Address.full_address,
                    'tag_name' => Faker::Marketing.buzzwords,
-                   'status' => "#{(1..2).to_a.sample}", # Active/Inactive Faker?
+                   'status' => (1..2).to_a.sample.to_s, # Active/Inactive Faker?
                    'first_listed' => Faker::Date.between(from: '2001-03-11', to: '2021-03-14'),
                    'bedrooms' => "#{(1..5).to_a.sample} BR",
                    'bathrooms' => "#{(1..5).to_a.sample} BA",
@@ -67,15 +71,19 @@ num = 0
                                                        random_sentences_to_add: 4),
                    'sqft' => "#{(900..6000).to_a.sample} sq. ft.",
                    'asking_price' => "$#{(10_000..30_000_000).to_a.sample}",
-
-                   'photo_1' => Faker::LoremFlickr.image(size: '320x240', search_terms: ['homes_for_sale?random=' + (1..30).to_s]),
-                   'photo_2' => Faker::LoremFlickr.image(size: '320x240', search_terms: ['homes_for_sale?random=' + (1..30).to_s]),
-                   'photo_3' => Faker::LoremFlickr.image(size: '320x240', search_terms: ['homes_for_sale?random=' + (1..30).to_s]),
-                   'photo_4' => Faker::LoremFlickr.image(size: '320x240', search_terms: ['homes_for_sale?random=' + (1..30).to_s]),
-                   'user_id' => User.ids.sample,
-                   'phone' => Faker::PhoneNumber.unique.cell_phone,
+                   'photo_1' => Faker::LoremFlickr.image(size: '320x240',
+                                                         search_terms: ["homes_for_sale?random=#{i += 1}"]),
+                   'photo_2' => Faker::LoremFlickr.image(size: '320x240',
+                                                         search_terms: ["homes_for_sale?random=#{i}"]),
+                   'photo_3' => Faker::LoremFlickr.image(size: '320x240',
+                                                         search_terms: ["homes_for_sale?random=#{i}"]),
+                   'photo_4' => Faker::LoremFlickr.image(size: '320x240',
+                                                         search_terms: ["homes_for_sale?random=#{i}"]),
+                   # "user_id" => User.ids.sample,
+                   'phone' => Faker::PhoneNumber.phone_number,
                    'community' => 'Homely'
                  })
+
   num += 1
 
   system('clear')

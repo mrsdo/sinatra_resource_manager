@@ -8,3 +8,4 @@ end
 
 run ApplicationController
 use ListingsController
+use RoleController

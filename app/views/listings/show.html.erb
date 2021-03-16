@@ -1,1 +1,24 @@
-<h1>This is the show page for an individual instance of your model.</h1>
+<h2>Edit Your Listings</h2>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Image</th>
+    <th>Summary</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% Array(@listings).each do |listing|%>
+    <tr>
+      <td><%= listing.id %></td>
+      <td><img src="<%= listing.photo_1 %>" alt="" width="200" height="100"/></td>
+      <td>
+        <strong><%= listing.name %></strong>
+        <br/><br/>
+        <%= listing.summary.truncate(255) %><a href='/listings/<%= listing.id %>\edit'>edit</a>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+</section>

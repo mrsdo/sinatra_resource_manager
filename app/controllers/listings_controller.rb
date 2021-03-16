@@ -1,37 +1,52 @@
+# frozen_string_literal: true
+
+# Listings
 class ListingsController < ApplicationController
 
-  # GET: /listings
-  get '/listings' do
+  get "/listings" do
+    @listing = Listing.all
     erb :"/listings/index.html"
   end
 
-  # GET: /listings/new
+  # new
   get '/listings/new' do
+    @listing = Listing.new
     erb :"/listings/new.html"
   end
 
-  # POST: /listings
+  # create
   post '/listings' do
-    redirect '/listings'
+    @listing = Listing.create(params)
+    redirect to "/listings/#{@listing.id}"
   end
 
-  # GET: /listings/5
+  # show
   get '/listings/:id' do
+    @listing = Listing.find(params[:id])
     erb :"/listings/show.html"
   end
 
-  # GET: /listings/5/edit
+  # edit
   get '/listings/:id/edit' do
+    @listing = Listing.find(params[:id])
     erb :"/listings/edit.html"
   end
 
-  # PATCH: /listings/5
+  # update
   patch '/listings/:id' do
-    redirect '/listings/:id'
+    @listing = Listing.find(params[:id])
+    @listing.update(params[:listing])
+    redirect to "/listings/#{@listing.id}"
   end
 
-  # DELETE: /listings/5/delete
-  delete '/listings/:id/delete' do
-    redirect '/listings'
+  # destroy
+  delete '/listings/:id' do
+    Listing.destroy(params[:id])
+    redirect to '/listings'
+  end
+
+  def destroy
+    Listing.destroy(params[:id])
+    redirect to '/listings'
   end
 end
