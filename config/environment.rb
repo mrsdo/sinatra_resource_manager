@@ -4,6 +4,8 @@ ENV['SINATRA_ENV'] ||= 'development'
 
 require 'bundler/setup'
 require 'mysql2'
+require 'dotenv'
+Dotenv.load('.env')
 
 Bundler.require(:default, ENV['SINATRA_ENV'])
 
@@ -13,7 +15,7 @@ configure :development do
   ActiveRecord::Base.establish_connection(
     adapter: 'mysql2',
     encoding: 'utf8',
-    database: 'dev_twenty45',
+    database: 'dev_sinatra_resource_manager',
     username: 'root',
     password: 'Palo5non!'
   )

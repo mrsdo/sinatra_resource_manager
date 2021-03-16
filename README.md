@@ -23,9 +23,19 @@ Doc: https://docs.google.com/document/d/e/2PACX-1vR_jpC1g9arR_SajVFdnWFn5kpAgFiW
 - [x] Validate installation with shotgun
 - [x] Github Init/Commit
 
-2. Setup Project MVC: Listings The listing manager uses
+2. Setup Project MVC: Listings The listing manager uses I need to generate a demo list of properties with the Faker gem.
+   There are a couple challenges here:
+    - Generating images
+    - Generating listings based on my local
 
-- [ ] Listings Controller
-- [ ] Listing Model
-- [ ] Listing View
+      #### Documentation:
+      https://github.com/faker-ruby/faker/blob/master/lib/locales/README.md
+      https://github.com/faker-ruby/faker#customization
+
+
+    Add requirements for listings migration/seed
+    - [x] Created DB dev_sinatra_resource manager
+    - [x] Create table Listings
+    - [x] Added listings MVC
+    - [x] Added Listings Seeds
 
