@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'http://rubygems.org'
-
+ruby '2.7.2'
 gem 'activerecord', '~> 6.1', require: 'active_record'
 gem 'bcrypt'
 gem 'dotenv'

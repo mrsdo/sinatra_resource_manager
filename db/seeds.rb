@@ -1,10 +1,20 @@
 # frozen_string_literal: true
 
+# db/seeds.rb
+require_relative '../app/models/role'
+# frozen_string_literal: true
+
 require 'faker'
 puts 'Running DB seed...'
 
 # # Don't let seed duplicate data more than once
 puts 'Cleaning database...'
+
+# Role.create([
+#                {role_name: "admin"},
+#                {role_name: "agent"},
+#                {role_name: "guest"}
+#              ])
 
 # puts "Creating sample Users..."
 # User.create([
@@ -46,6 +56,8 @@ puts 'Cleaning database...'
 #                 }
 #             ])
 # puts "Users Completed..."
+#
+
 puts '.......'
 puts 'Cleaning Listings Table'
 Listing.destroy_all
@@ -62,7 +74,7 @@ num = 0
   i = num += 1
   Listing.create({
                    'name' => Faker::Address.full_address,
-                   'tag_name' => Faker::Marketing.buzzwords,
+                   'tag_name' => Faker::Address.community,
                    'status' => (1..2).to_a.sample.to_s, # Active/Inactive Faker?
                    'first_listed' => Faker::Date.between(from: '2001-03-11', to: '2021-03-14'),
                    'bedrooms' => "#{(1..5).to_a.sample} BR",
@@ -74,11 +86,11 @@ num = 0
                    'photo_1' => Faker::LoremFlickr.image(size: '320x240',
                                                          search_terms: ["homes_for_sale?random=#{i += 1}"]),
                    'photo_2' => Faker::LoremFlickr.image(size: '320x240',
-                                                         search_terms: ["homes_for_sale?random=#{i}"]),
+                                                         search_terms: ["homes_for_sale?random=#{i += 1}"]),
                    'photo_3' => Faker::LoremFlickr.image(size: '320x240',
-                                                         search_terms: ["homes_for_sale?random=#{i}"]),
+                                                         search_terms: ["homes_for_sale?random=#{i += 1}"]),
                    'photo_4' => Faker::LoremFlickr.image(size: '320x240',
-                                                         search_terms: ["homes_for_sale?random=#{i}"]),
+                                                         search_terms: ["homes_for_sale?random=#{i += 1}"]),
                    # "user_id" => User.ids.sample,
                    'phone' => Faker::PhoneNumber.phone_number,
                    'community' => 'Homely'

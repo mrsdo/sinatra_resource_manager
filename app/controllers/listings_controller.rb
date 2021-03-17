@@ -49,4 +49,5 @@ class ListingsController < ApplicationController
     Listing.destroy(params[:id])
     redirect to '/listings'
   end
+
 end

@@ -10,11 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_16_080717) do
+ActiveRecord::Schema.define(version: 2021_03_17_012136) do
+
+  create_table "articles", charset: "utf8", force: :cascade do |t|
+    t.string "title"
+    t.string "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "listings", charset: "utf8", force: :cascade do |t|
-    t.string "name"
-    t.string "tag_name"
+    t.string "address"
+    t.string "hoa"
     t.string "status"
     t.date "first_listed"
     t.string "bedrooms"
@@ -30,10 +37,21 @@ ActiveRecord::Schema.define(version: 2021_03_16_080717) do
     t.string "community"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
   end
 
   create_table "roles", charset: "utf8", force: :cascade do |t|
     t.string "role_name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", charset: "utf8", force: :cascade do |t|
+    t.string "fname"
+    t.string "lname"
+    t.string "email"
+    t.string "username"
+    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
